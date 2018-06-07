@@ -1,0 +1,45 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+	font-size: inherit;
+}
+nav{
+  height:60px !important;
+}
+nav > div.nav-content{
+  height:60px !important;
+}
+
+nav > div.nav-content > ul{
+  height:60px !important;
+}
+li.tab{
+  margin-top:10px !important;
+  width:25%;
+}
+li.tab > a{
+  font-size:20px !important;
+}
+div.knobContainer{
+  margin:1px;
+}
+div.generalSetting {
+}
+span.badge{
+  margin-top:7px !important;
+}
+div.knob{
+  width:75px;
+  text-align: center;
+  margin: 20px;
+  display:inline-block;
+}
