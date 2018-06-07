@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Starter Template - Materialize</title>
+
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1 nav-extended" role="navigation">
+    <div class="nav-content">
+      <ul class="tabs tabs-transparent">
+        <li class="tab"><a id="1" class="active" href="#test1">1</a></li>
+        <li class="tab"><a id="2" href="#test2">2</a></li>
+        <li class="tab"><a id="3" href="#test3">3</a></li>
+        <li class="tab"><a id="4" href="#test4">4</a></li>
+      </ul>
+    </div>
+  </nav>
+  <div id="test1" class="col s12">
+    <div class="generalSetting">
+      <div class="knob col s4">
+        <p>Volume</p>
+        <input id="Volume_1" type="text"  value="0" data-min="0" data-max="1" class="1"/>
+      </div>
+      <div class="knob col s4">
+        <p>Gain</p>
+        <input id="Gain_1" type="text"  value="0" data-min="0" data-max="1" class="1"/>
+      </div>
+      <div class="knob col s4">
+
+      </div>
+      <div class="knob col s4">
+        <p>Bass</p>
+        <input id="Bass_1" type="text"  value="0" class="1"/>
+      </div>
+      <div class="knob col s4">
+        <p>Middle</p>
+        <input id="Middle_1" type="text"  value="0" class="1"/>
+      </div>
+      <div class="knob col s4">
+        <p>Treble</p>
+        <input id="Treble_1" type="text"  value="0" class="1"/>
+      </div>
+    </div>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="delay_1_check" name="Delay" value="1"/>
+            <label for="delay_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Delay_Feedback_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Delay_Time_1" type="text" data-min="0" data-max="5" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Delay_Mix_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Distortion</i>
+          <span class="badge">
+            <input type="checkbox" id="distortion_1_check" name="Distortion" value="1"/>
+            <label for="distortion_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Drive</p>
+                <input id="Distortion_curve_1" type="text" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Type</p>
+                <input id="Distortion_type_1" type="text" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">RingModulator</i>
+          <span class="badge">
+            <input type="checkbox" id="ring_1_check" name="Ring" value="1"/>
+            <label for="ring_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Ring_speed_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Distortion</p>
+                <input id="Ring_distortion_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Ring_mix_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Tremolo</i>
+          <span class="badge">
+            <input type="checkbox" id="tremolo_1_check" name="tremolo" value="1"/>
+            <label for="tremolo_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Tremolo_speed_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Tremolo_depth_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Tremolo_mix_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Reverb</i>
+          <span class="badge">
+            <input type="checkbox" id="reverb_1_check" name="reverb" value="1"/>
+            <label for="reverb_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Reverb_time_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Decay</p>
+                <input id="Reverb_decay_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Reverb_mix_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Flanger</i>
+          <span class="badge">
+            <input type="checkbox" id="flanger_1_check" name="flanger" value="1"/>
+            <label for="flanger_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Flanger_time_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Flanger_speed_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Flanger_depth_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Flanger_feedback_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Flanger_mix_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Double Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="dubDelay_1_check" name="dubDelay" value="1"/>
+            <label for="dubDelay_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="DubDelay_feedback_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="DubDelay_time_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>CutOff</p>
+                <input id="DubDelay_cutoff_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="DubDelay_mix_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">PingPong Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="pingPongDelay_1_check" name="pingPongDelay" value="1"/>
+            <label for="pingPongDelay_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="PingPongDelay_feedback_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="PingPongDelay_time_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="PingPongDelay_mix_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Compressor</i>
+          <span class="badge">
+            <input type="checkbox" id="compressor_1_check" name="Compressor" value="1"/>
+            <label for="compressor_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Threshold</p>
+                <input id="Compressor_threshold_1" type="text" data-min="0" data-max="1" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Knee</p>
+                <input id="Compressor_knee_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Attack</p>
+                <input id="Compressor_attack_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Release</p>
+                <input id="Compressor_release_1" type="text" data-min="0" data-max="1" value="0" class="1"/>
+              </div>
+              <div class="knob col s4">
+                <p>Ratio</p>
+                <input id="Compressor_Ratio_1" type="text" data-min="0" data-max="1" class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Chorus</i>
+          <span class="badge">
+            <input type="checkbox" id="chorus_1_check" name="chorus" value="1"/>
+            <label for="chorus_1_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="chorus_mix_1" type="text" data-min="0" data-max="1"  class="1"/>
+              </div>
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div id="test2" class="col s0"> <!--pagina 2-->
+    <div class="generalSetting">
+      <div class="knob col s4">
+        <p>Volume</p>
+        <input id="Volume_2" type="text"  value="0" data-min="0" data-max="1" class="2"/>
+      </div>
+      <div class="knob col s4">
+        <p>Gain</p>
+        <input id="Gain_2" type="text"  value="0" data-min="0" data-max="1" class="2"/>
+      </div>
+      <div class="knob col s4">
+
+      </div>
+      <div class="knob col s4">
+        <p>Bass</p>
+        <input id="Bass_2" type="text"  value="0" data-min="0" data-max="1" class="2"/>
+      </div>
+      <div class="knob col s4">
+        <p>Middle</p>
+        <input id="Middle_2" type="text"  value="0" data-min="0" data-max="1" class="2"/>
+      </div>
+      <div class="knob col s4">
+        <p>Treble</p>
+        <input id="Treble_2" type="text"  value="0" data-min="0" data-max="1" class="2"/>
+      </div>
+    </div>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="delay_2_check" name="Delay" value="2"/>
+            <label for="delay_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Delay_Feedback_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Delay_Time_2" type="text" data-min="0" data-max="5" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Delay_Mix_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Distortion</i>
+          <span class="badge">
+            <input type="checkbox" id="distortion_2_check" name="Distortion" value="2"/>
+            <label for="distortion_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Drive</p>
+                <input id="Distortion_curve_2" type="text" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Type</p>
+                <input id="Distortion_type_2" type="text" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">RingModulator</i>
+          <span class="badge">
+            <input type="checkbox" id="ring_2_check" name="Ring" value="2"/>
+            <label for="ring_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Ring_speed_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Distortion</p>
+                <input id="Ring_distortion_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Ring_mix_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Tremolo</i>
+          <span class="badge">
+            <input type="checkbox" id="tremolo_2_check" name="tremolo" value="2"/>
+            <label for="tremolo_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Tremolo_speed_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Tremolo_depth_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Tremolo_mix_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Reverb</i>
+          <span class="badge">
+            <input type="checkbox" id="reverb_2_check" name="reverb" value="2"/>
+            <label for="reverb_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Reverb_time_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Decay</p>
+                <input id="Reverb_decay_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Reverb_mix_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Flanger</i>
+          <span class="badge">
+            <input type="checkbox" id="flanger_2_check" name="flanger" value="2"/>
+            <label for="flanger_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Flanger_time_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Flanger_speed_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Flanger_depth_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Flanger_feedback_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Flanger_mix_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Double Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="dubDelay_2_check" name="dubDelay" value="2"/>
+            <label for="dubDelay_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="DubDelay_feedback_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="DubDelay_time_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>CutOff</p>
+                <input id="DubDelay_cutoff_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="DubDelay_mix_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">PingPong Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="pingPongDelay_2_check" name="pingPongDelay" value="2"/>
+            <label for="pingPongDelay_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="PingPongDelay_feedback_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="PingPongDelay_time_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="PingPongDelay_mix_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Compressor</i>
+          <span class="badge">
+            <input type="checkbox" id="compressor_2_check" name="Compressor" value="2"/>
+            <label for="compressor_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Threshold</p>
+                <input id="Compressor_threshold_2" type="text" data-min="0" data-max="1" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Knee</p>
+                <input id="Compressor_knee_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Attack</p>
+                <input id="Compressor_attack_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Release</p>
+                <input id="Compressor_release_2" type="text" data-min="0" data-max="1" value="0" class="2"/>
+              </div>
+              <div class="knob col s4">
+                <p>Ratio</p>
+                <input id="Compressor_Ratio_2" type="text" data-min="0" data-max="1" class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Chorus</i>
+          <span class="badge">
+            <input type="checkbox" id="chorus_2_check" name="chorus" value="2"/>
+            <label for="chorus_2_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="chorus_mix_2" type="text" data-min="0" data-max="1"  class="2"/>
+              </div>
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div id="test3" class="col s0"> <!-- pagina 3-->
+    <div class="generalSetting">
+      <div class="knob col s4">
+        <p>Volume</p>
+        <input id="Volume_3" type="text"  value="0" data-min="0" data-max="1" class="3"/>
+      </div>
+      <div class="knob col s4">
+        <p>Gain</p>
+        <input id="Gain_3" type="text"  value="0" data-min="0" data-max="1" class="3"/>
+      </div>
+      <div class="knob col s4">
+
+      </div>
+      <div class="knob col s4">
+        <p>Bass</p>
+        <input id="Bass_3" type="text"  value="0" data-min="0" data-max="1" class="3"/>
+      </div>
+      <div class="knob col s4">
+        <p>Middle</p>
+        <input id="Middle_3" type="text"  value="0" data-min="0" data-max="1" class="3"/>
+      </div>
+      <div class="knob col s4">
+        <p>Treble</p>
+        <input id="Treble_3" type="text"  value="0" data-min="0" data-max="1" class="3"/>
+      </div>
+    </div>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="delay_3_check" name="Delay" value="3"/>
+            <label for="delay_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Delay_Feedback_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Delay_Time_3" type="text" data-min="0" data-max="5" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Delay_Mix_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Distortion</i>
+          <span class="badge">
+            <input type="checkbox" id="distortion_3_check" name="Distortion" value="3"/>
+            <label for="distortion_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Drive</p>
+                <input id="Distortion_curve_3" type="text" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Type</p>
+                <input id="Distortion_type_3" type="text" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">RingModulator</i>
+          <span class="badge">
+            <input type="checkbox" id="ring_3_check" name="Ring" value="3"/>
+            <label for="ring_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Ring_speed_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Distortion</p>
+                <input id="Ring_distortion_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Ring_mix_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Tremolo</i>
+          <span class="badge">
+            <input type="checkbox" id="tremolo_3_check" name="tremolo" value="3"/>
+            <label for="tremolo_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Tremolo_speed_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Tremolo_depth_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Tremolo_mix_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Reverb</i>
+          <span class="badge">
+            <input type="checkbox" id="reverb_3_check" name="reverb" value="3"/>
+            <label for="reverb_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Reverb_time_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Decay</p>
+                <input id="Reverb_decay_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Reverb_mix_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Flanger</i>
+          <span class="badge">
+            <input type="checkbox" id="flanger_3_check" name="flanger" value="3"/>
+            <label for="flanger_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Flanger_time_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Flanger_speed_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Flanger_depth_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Flanger_feedback_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Flanger_mix_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Double Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="dubDelay_3_check" name="dubDelay" value="3"/>
+            <label for="dubDelay_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="DubDelay_feedback_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="DubDelay_time_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>CutOff</p>
+                <input id="DubDelay_cutoff_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="DubDelay_mix_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">PingPong Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="pingPongDelay_3_check" name="pingPongDelay" value="3"/>
+            <label for="pingPongDelay_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="PingPongDelay_feedback_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="PingPongDelay_time_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="PingPongDelay_mix_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Compressor</i>
+          <span class="badge">
+            <input type="checkbox" id="compressor_3_check" name="Compressor" value="3"/>
+            <label for="Compressor_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Threshold</p>
+                <input id="Compressor_threshold_3" type="text" data-min="0" data-max="1" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Knee</p>
+                <input id="Compressor_knee_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Attack</p>
+                <input id="Compressor_attack_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Release</p>
+                <input id="Compressor_release_3" type="text" data-min="0" data-max="1" value="0" class="3"/>
+              </div>
+              <div class="knob col s4">
+                <p>Ratio</p>
+                <input id="Compressor_Ratio_3" type="text" data-min="0" data-max="1" class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Chorus</i>
+          <span class="badge">
+            <input type="checkbox" id="chorus_3_check" name="chorus" value="3"/>
+            <label for="chorus_3_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="chorus_mix_3" type="text" data-min="0" data-max="1"  class="3"/>
+              </div>
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+  <div id="test4" class="col s0">
+    <div class="generalSetting">
+      <div class="knob col s4">
+        <p>Volume</p>
+        <input id="Volume_4" type="text"  value="0" data-min="0" data-max="1" class="4"/>
+      </div>
+      <div class="knob col s4">
+        <p>Gain</p>
+        <input id="Gain_4" type="text"  value="0" data-min="0" data-max="1" class="4"/>
+      </div>
+      <div class="knob col s4">
+
+      </div>
+      <div class="knob col s4">
+        <p>Bass</p>
+        <input id="Bass_4" type="text"  value="0" data-min="0" data-max="1" class="4"/>
+      </div>
+      <div class="knob col s4">
+        <p>Middle</p>
+        <input id="Middle_4" type="text"  value="0" data-min="0" data-max="1" class="4"/>
+      </div>
+      <div class="knob col s4">
+        <p>Treble</p>
+        <input id="Treble_4" type="text"  value="0" data-min="0" data-max="1" class="4"/>
+      </div>
+    </div>
+    <ul class="collapsible" data-collapsible="accordion">
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="delay_1_check" name="Delay" value="4"/>
+            <label for="delay_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Delay_Feedback_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Delay_Time_4" type="text" data-min="0" data-max="5" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Delay_Mix_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Distortion</i>
+          <span class="badge">
+            <input type="checkbox" id="distortion_4_check" name="Distortion" value="4"/>
+            <label for="distortion_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Drive</p>
+                <input id="Distortion_curve_4" type="text" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Type</p>
+                <input id="Distortion_type_4" type="text" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">RingModulator</i>
+          <span class="badge">
+            <input type="checkbox" id="ring_4_check" name="Ring" value="4"/>
+            <label for="ring_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Ring_speed_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Distortion</p>
+                <input id="Ring_distortion_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Ring_mix_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Tremolo</i>
+          <span class="badge">
+            <input type="checkbox" id="tremolo_4_check" name="tremolo" value="4"/>
+            <label for="tremolo_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Tremolo_speed_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Tremolo_depth_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Tremolo_mix_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Reverb</i>
+          <span class="badge">
+            <input type="checkbox" id="reverb_4_check" name="reverb" value="4"/>
+            <label for="reverb_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Reverb_time_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Decay</p>
+                <input id="Reverb_decay_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Reverb_mix_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Flanger</i>
+          <span class="badge">
+            <input type="checkbox" id="flanger_4_check" name="flanger" value="4"/>
+            <label for="flanger_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="Flanger_time_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Speed</p>
+                <input id="Flanger_speed_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Depth</p>
+                <input id="Flanger_depth_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="Flanger_feedback_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="Flanger_mix_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Double Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="dubDelay_4_check" name="dubDelay" value="4"/>
+            <label for="dubDelay_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="DubDelay_feedback_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="DubDelay_time_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>CutOff</p>
+                <input id="DubDelay_cutoff_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="DubDelay_mix_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">PingPong Delay</i>
+          <span class="badge">
+            <input type="checkbox" id="pingPongDelay_4_check" name="pingPongDelay" value="4"/>
+            <label for="pingPongDelay_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Feedback</p>
+                <input id="PingPongDelay_feedback_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Time</p>
+                <input id="PingPongDelay_time_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="PingPongDelay_mix_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Compressor</i>
+          <span class="badge">
+            <input type="checkbox" id="compressor_4_check" name="Compressor" value="4"/>
+            <label for="compressor_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Threshold</p>
+                <input id="Compressor_threshold_4" type="text" data-min="0" data-max="1"  class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Knee</p>
+                <input id="Compressor_knee_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Attack</p>
+                <input id="Compressor_attack_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Release</p>
+                <input id="Compressor_release_4" type="text" data-min="0" data-max="1" value="0" class="4"/>
+              </div>
+              <div class="knob col s4">
+                <p>Ratio</p>
+                <input id="Compressor_Ratio_4" type="text" data-min="0" data-max="1"  class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+      <li>
+        <div class="collapsible-header">
+          <i class="material-icons">Chorus</i>
+          <span class="badge">
+            <input type="checkbox" id="chorus_4_check" name="chorus" value="4"/>
+            <label for="chorus_4_check"><label>
+          </span>
+        </div>
+        <div class="collapsible-body">
+            <div class="knobContainer">
+              <div class="knob col s4">
+                <p>Mix</p>
+                <input id="chorus_mix_4" type="text" data-min="0" data-max="1"  class="4"/>
+              </div>
+            </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+  </div>
+
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/jquery.knob.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/Pizzicato.js"></script>
+  <script src="js/tuna-min.js"></script>
+  <script src="js/SoundController.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
